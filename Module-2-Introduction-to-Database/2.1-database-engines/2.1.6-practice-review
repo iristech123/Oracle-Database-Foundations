@@ -1,0 +1,226 @@
+### 翻译及修正答案
+
+---
+
+#### **问题 1**  
+**哪些是两种最广为人知的数据库引擎？**  
+- **正确答案**：  
+  1. **Microsoft SQL Server**  
+  2. **Oracle**  
+
+**解释**：  
+这两个是企业中最常用的关系型数据库引擎，支持复杂的查询和事务管理。
+
+---
+
+#### **问题 2**  
+**SQL Server 是一个结构化数据库，而 MongoDB 是一个 __________ 数据库的例子。**  
+- **正确答案**：  
+  **unstructured（非结构化）**
+
+**解释**：  
+MongoDB 是 NoSQL 数据库的一种，它处理非结构化或半结构化数据，使用类似 JSON 的灵活格式存储。
+
+---
+
+#### **问题 3**  
+**MongoDB、Cassandra 和 Couchbase 都是 _________ 数据库的例子。**  
+- **正确答案**：  
+  **NoSQL**
+
+**解释**：  
+这些数据库属于 NoSQL 类型，不使用传统的关系型模型，通常被设计为分布式系统，用于处理大规模数据。
+
+---
+
+#### **问题 4**  
+**描述分配给系统资源动态增长或缩减的术语是什么？**  
+- **正确答案**：  
+  **scale**
+
+**解释**：  
+"Scale" 指的是动态调整系统资源以满足负载需求的能力，可以是水平扩展（增加更多服务器）或垂直扩展（增加单个服务器的能力）。
+
+---
+
+#### **问题 5**  
+**哪种数据库引擎适合高吞吐量和低延迟？**  
+- **正确答案**：  
+  **key-value（键值型数据库）**
+
+**解释**：  
+键值数据库（如 Redis 和 DynamoDB）专为高吞吐量和低延迟设计，非常适合需要快速读写操作的应用，例如缓存、实时会话管理等。  
+**in-memory 数据库** 也可能适用，但问题明确问的是数据库引擎类型，而键值数据库是更具体的答案。
+
+
+
+### **什么是 NoSQL？**
+**NoSQL（Not Only SQL）** 是一类与传统关系型数据库（RDBMS）不同的数据库，它主要用于存储和处理非结构化或半结构化的数据，具有灵活性和高性能的特点。
+
+#### **NoSQL 的特点**
+1. **灵活的数据模型**：
+   - 数据不需要固定的表结构，支持 JSON、键值对、图形、列族等格式。
+2. **高可扩展性**：
+   - 通过分布式系统，支持水平扩展（添加更多节点）。
+3. **高性能**：
+   - 适合大规模数据处理和低延迟应用场景。
+4. **支持多种存储模式**：
+   - 键值数据库（Key-Value）
+   - 文档数据库（Document）
+   - 图数据库（Graph）
+   - 列族数据库（Column-Family）
+
+#### **NoSQL 的常见应用场景**
+- 社交网络（如用户关系、消息流）
+- 电商平台（如产品信息存储、购物车）
+- 大数据实时处理（如日志分析）
+
+---
+
+### **结构化数据库和非结构化数据库的定义**
+
+#### **1. 结构化数据库**
+**定义**：  
+结构化数据库是指以表格形式组织数据，数据被存储在具有固定模式（Schema）的表格中，每列代表一个字段，每行代表一条记录。
+
+**特点**：
+- **模式固定**：需要事先定义数据结构（例如字段名称和数据类型）。
+- **强一致性**：适合事务型应用（ACID）。
+- **查询语言**：通常使用 SQL（Structured Query Language）。
+- **典型数据库**：MySQL、PostgreSQL、Oracle、Microsoft SQL Server。
+
+**应用场景**：
+- 金融系统（如银行账户、交易记录）
+- 企业资源管理（ERP）
+- 客户关系管理（CRM）
+
+---
+
+#### **2. 非结构化数据库**
+**定义**：  
+非结构化数据库是指没有固定模式的数据存储形式，数据可以是文档、图像、视频、日志等。
+
+**特点**：
+- **无固定模式**：可以灵活存储各种格式的数据。
+- **可扩展性强**：支持大规模、分布式存储。
+- **高性能**：适合实时性要求较高的应用。
+- **典型数据库**：MongoDB、Cassandra、Couchbase。
+
+**应用场景**：
+- 媒体文件存储（如视频、图片）
+- 社交网络数据（如用户帖子、评论）
+- 大数据分析（如日志、传感器数据）
+
+---
+
+### **结构化与非结构化的区别**
+
+| **特点**           | **结构化数据库**               | **非结构化数据库**         |
+|--------------------|-------------------------------|---------------------------|
+| **数据存储形式**    | 表格形式，有固定模式           | JSON、文档、键值等，无固定模式 |
+| **查询方式**        | 使用 SQL 查询                 | 使用 API 或自定义查询语言 |
+| **扩展方式**        | 通常是垂直扩展（增加硬件能力） | 通常是水平扩展（增加节点） |
+| **适用场景**        | 事务处理，强一致性需求         | 大规模数据存储，实时性需求 |
+| **典型数据库**      | MySQL、PostgreSQL             | MongoDB、Cassandra        |
+
+---
+
+如果你需要进一步了解某种数据库或者具体使用场景，可以告诉我！
+
+
+
+1.
+Question 1
+What are two of the most widely known database engines?
+
+
+Microsoft SQL Server
+
+
+Correct
+Yes!
+
+
+Structured Query Language
+
+
+
+Oracle
+
+
+Correct
+That's right!
+
+
+Database Server
+
+
+
+JavaScript
+
+
+1 / 1 point
+2.
+Question 2
+SQL Server is a structured database while MongoDB is an example of an __________ database.
+
+unstructured
+Correct
+Right. Unstructured databases do not have a set number of columns.
+
+1 / 1 point
+3.
+Question 3
+MongoDB, Cassandra, and Couchbase are all examples of _________ databases.
+
+noSQL
+Correct
+Right. All three databases are examples of Not Only SQL (NoSQL) databases.
+
+1 / 1 point
+4.
+Question 4
+What is the term used to describe dynamic growth or reduction of allocated resources to a given system?
+
+
+instagrow
+
+
+
+dyngrow
+
+
+
+scale
+
+
+
+addsources
+
+
+Correct
+Right!
+
+1 / 1 point
+5.
+Question 5
+What type of DB engine is meant for high-throughput and low latency?
+
+
+rdbms
+
+
+
+in-memory
+
+
+
+document
+
+
+
+key-value
+
+
+Correct
+That's right!

@@ -1,0 +1,13 @@
+这段内容主要介绍了两大数据库类别及其代表产品：  
+
+1. **结构化数据（Structured Data）**：  
+   - 使用传统关系型数据库（Relational Databases）。  
+   - 代表产品：**Oracle**、**SQL Server**（微软）、**MySQL**（Oracle）。  
+
+2. **非结构化数据（Unstructured Data）**：  
+   - 使用NoSQL（Not Only SQL）数据库，专注于实时数据处理和收集。  
+   - 代表产品：**MongoDB**、**Cassandra**、**Couchbase**。  
+
+**重点**：  
+- 不同场景需求决定数据库选择。关系型数据库适用于传统数据存储，而NoSQL更适合实时数据处理。  
+- 本课程重点关注**Oracle**，它是企业级关系型数据库的行业标准。
