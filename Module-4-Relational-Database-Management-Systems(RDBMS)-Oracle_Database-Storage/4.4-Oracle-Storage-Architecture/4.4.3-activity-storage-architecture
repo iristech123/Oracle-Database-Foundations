@@ -1,0 +1,43 @@
+以下是文件类型与对应数据库操作的匹配关系：  
+
+1. **记录数据变更的历史** → **归档重做日志文件（Archived Redo Log Files）**  
+2. **启动时配置实例使用** → **参数文件（Parameter File）**  
+3. **按时间顺序记录消息和错误的特殊日志** → **警报日志文件（Alert Log File）**  
+4. **允许具有特定角色的用户远程连接以执行管理任务** → **密码文件（Password File）**  
+5. **用于恢复数据库** → **备份文件（Backup Files）**  
+6. **在内部错误发生时用于确定问题来源** → **跟踪文件（Trace Files）**  
+
+---
+
+### 总结：
+这些文件类型是管理数据库操作的重要组成部分：  
+
+1. **归档重做日志文件**：跟踪所有数据更改，便于数据库恢复。  
+2. **参数文件**：在数据库实例启动时设定配置参数。  
+3. **警报日志文件**：按时间顺序记录系统消息和错误，用于系统监控。  
+4. **密码文件**：允许特定授权用户远程执行数据库管理任务。  
+5. **备份文件**：在数据库发生故障时用于恢复数据。  
+6. **跟踪文件**：记录内部错误的详细信息，用于诊断问题来源。  
+
+
+
+Here’s how to match the file types to their corresponding database operations:
+
+1. **Contain ongoing history of data changes** → **Archived Redo Log Files**  
+2. **Used to configure instance during startup** → **Parameter File**  
+3. **Special entries of a chronological log of messages and errors** → **Alert Log File**  
+4. **Allows users with certain roles to connect remotely to perform admin tasks** → **Password File**  
+5. **Used to recover the database** → **Backup Files**  
+6. **Used when internal error occurs to help determine the source of the issue** → **Trace Files**  
+
+---
+
+### Summary:
+These file types are integral to managing database operations:  
+
+1. **Archived Redo Log Files**: Track all data changes for recovery purposes.  
+2. **Parameter File**: Sets configuration parameters for the database instance at startup.  
+3. **Alert Log File**: Provides a chronological record of messages and errors for system monitoring.  
+4. **Password File**: Grants authorized users remote access to perform administrative tasks.  
+5. **Backup Files**: Allow recovery of the database in case of failure.  
+6. **Trace Files**: Diagnose issues by logging details of internal errors.  

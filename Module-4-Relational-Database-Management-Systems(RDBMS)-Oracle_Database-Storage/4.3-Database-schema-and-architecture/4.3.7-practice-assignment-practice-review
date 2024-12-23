@@ -1,0 +1,92 @@
+1.
+Question 1
+What is a Database Schema?
+
+a. the structure of the database
+b. where the data is stored
+c. the purpose of the database
+d. the usage of the database
+
+Correct - > a. the structure of the database
+
+2.
+Question 2
+Why is the schema design important?
+
+a. it determines the number of users that will connect to the data
+b. it defines key elements of the data being stored
+c. it helps when building data queries for applications
+d. it deals with database backup strategy
+
+Correct - > b. it defines key elements of the data being stored
+
+
+
+3.
+Question 3
+In a RDBMS, how are tables related?
+
+a. by using table names
+b. based on the location where the tables are stored
+c. it depends on the application using the database
+d. by primary and foreign keys
+
+Correct - > d. by primary and foreign keys
+
+
+4.
+Question 4
+When designing tables, are the names given to each table important?
+
+a. Yes
+b. No
+
+Correct - > a. Yes
+
+
+5.
+Question 5
+In an RDBMS design, what is another name for a table?
+
+a. Client
+b. Service
+c. Entity
+d. Host
+
+Correct - > c. Entity
+
+
+
+### 英文总结：
+1. **What is a Database Schema?**  
+   - The structure of the database.
+
+2. **Why is schema design important?**  
+   - It defines key elements of the data being stored and helps in building queries.
+
+3. **How are tables related in a RDBMS?**  
+   - Through primary and foreign keys.
+
+4. **Are table names important when designing tables?**  
+   - Yes.
+
+5. **What is another name for a table in RDBMS design?**  
+   - Entity.
+
+---
+
+### 中文总结：
+1. **什么是数据库模式（Schema）？**  
+   - 数据库的结构。
+
+2. **为什么模式设计重要？**  
+   - 它定义了存储数据的关键元素，并有助于构建查询。
+
+3. **在关系数据库管理系统（RDBMS）中，表如何关联？**  
+   - 通过主键和外键。
+
+4. **在设计表时，表名是否重要？**  
+   - 是的，重要。
+
+5. **在RDBMS设计中，表的另一种叫法是什么？**  
+   - 实体（Entity）。

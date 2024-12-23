@@ -1,0 +1,25 @@
+### 英文总结  
+
+1. **Data Storage Challenges**:  
+   - In the past, data was accessible to anyone in an organization, and trust was implicit.  
+   - However, with the rise of security and privacy concerns, data storage has become less "storage-friendly."  
+   - Today, data must be immediately accessible from anywhere in the world, including video, audio, images, and text.  
+   - This data must be securely accessible on any device and from any location.
+
+2. **Security vs. Accessibility**:  
+   - There is a trade-off between **security** (e.g., encryption, authentication) and **accessibility** (easy access from any location).  
+   - The question arises: Would you be willing to compromise security for cheaper or more accessible data, or would you prefer to access data only from a specific physical location if security is a concern?
+
+---
+
+### 中文总结  
+
+1. **数据存储的挑战**：  
+   - 在过去，数据对组织中的任何人都可以访问，且信任是隐性存在的。  
+   - 然而，由于安全和隐私问题，数据存储变得不再像以前那样“存储友好”。  
+   - 现在，所有类型的数据（视频、音频、图像、文本等）必须能够立即从全球任何地方访问。  
+   - 这些数据需要在任何设备上、任何地点安全地可访问。
+
+2. **安全性与可访问性的权衡**：  
+   - 在**安全性**（如加密、身份验证）和**可访问性**（从任何地方轻松访问）之间存在权衡。  
+   - 问题是：你是否愿意为了便宜或更便捷地访问数据而放弃安全性，还是宁愿只能在特定物理位置访问数据，以保证安全性？  

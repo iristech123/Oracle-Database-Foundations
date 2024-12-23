@@ -1,0 +1,74 @@
+### **英文总结：Key Points**
+1. **Purpose-Oriented Design:**  
+   - The database should be designed with its intended purpose in mind, such as a shopping cart application.  
+   - Considerations include storing shopping-related data (e.g., carts, transactions) and ensuring integration with the website and mobile devices.  
+
+2. **Performance Optimization:**  
+   - The database must deliver fast response times, such as sub-second or microsecond speeds, especially when accessed by thousands of users.  
+
+3. **Scalability and Enhancement:**  
+   - Design for scalability to handle millions of rows of data.  
+   - Enhance the design post-development to ensure it supports increasing demands, including performance and capacity.  
+
+4. **Key Design Considerations:**  
+   - Include backup, recovery, security, auditing, and scalability from the beginning.  
+   - Regularly revisit these considerations to improve and optimize.  
+
+5. **Implementation:**  
+   - Execute the design with all considerations in place, such as accounting, reporting, and analytics integration.  
+   - Coordinate web server communication with the database and ensure proper scaling.  
+
+6. **Complexity Acknowledgement:**  
+   - Database architecture involves numerous interrelated components and can become complex quickly.
+
+---
+
+### **中文总结：重点**  
+1. **以目的为导向的设计：**  
+   - 数据库设计需围绕其用途展开，例如购物车应用。  
+   - 考虑存储购物相关数据（如购物车、交易）并确保与网站和移动设备的集成。  
+
+2. **性能优化：**  
+   - 数据库需具备快速响应能力，例如亚秒或微秒级响应，尤其在千人访问场景下。  
+
+3. **可扩展性与增强：**  
+   - 设计需支持扩展，以处理数百万行数据。  
+   - 开发完成后需增强设计以满足性能和容量需求的增长。  
+
+4. **关键设计考量：**  
+   - 初期即需纳入备份、恢复、安全、审计及可扩展性。  
+   - 定期审视并优化这些方面。  
+
+5. **实施：**  
+   - 在实施阶段整合所有相关功能，如会计、报告和分析。  
+   - 协调Web服务器与数据库的通信并确保良好的扩展性。  
+
+6. **复杂性认识：**  
+   - 数据库架构涉及众多互联组件，其复杂性可能迅速增加。
+
+
+   当然可以！让我们用**日常生活中的例子**来解释“亚秒级”和“微秒级”：  
+
+---
+
+### **亚秒级（Sub-second）**
+**例子**：  
+想象你在打开一个网页，页面加载的速度非常快，比如只用了 **0.5秒（500毫秒）**。  
+- **500毫秒**属于亚秒级，因为时间小于1秒。  
+- 日常生活中，人类眨眼的时间大约是 **300-400毫秒**，所以“亚秒级”可以涵盖从眨眼到更快的动作。  
+
+---
+
+### **微秒级（Microsecond）**
+**例子**：  
+再想象你按下电梯按钮，电梯的灯亮起，这是一个电子信号传递的过程。这个信号的传递可能仅用了 **1微秒（0.000001秒）**。  
+- **1微秒**是微秒级，比人类的反应速度快了大约 **1000倍**。  
+- 对比一下，**光在1微秒内可以传播约300米**，相当于绕一圈标准足球场的长度。  
+
+---
+
+### **两者对比的直观例子**
+- **亚秒级**：你点击鼠标后，电脑屏幕显示反应的时间，通常是 **几十毫秒到几百毫秒**。  
+- **微秒级**：当你点击鼠标时，鼠标发送信号到电脑处理器的时间，可能只需要 **几微秒**。  
+
+总结：**亚秒级**是更广义的范围（包括毫秒和微秒），而**微秒级**是亚秒级中的更小部分，速度快到几乎感觉不到。

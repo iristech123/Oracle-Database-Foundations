@@ -1,0 +1,298 @@
+1.
+Question 1
+What should you do when building a database structure?
+
+a. start by configuring the network
+b. start by installing the database
+c. start by designing a database model
+
+Correct - > c. start by designing a database model
+
+
+2.
+Question 2
+When designing a database structure, it is important to ________ .
+
+a. consider remote connectivity options
+b. understand oAuth
+c. know the amount and type of data that will be stored
+d. all of these
+
+Correct - > c. know the amount and type of data that will be stored
+
+
+
+3.
+Question 3
+When building tables, it is important to know _________ .
+
+a. the purpose of the table
+b. all the columns you will need
+c. the tables it will be related to
+d. all of the above
+
+Correct - > d. all of the above
+
+
+
+4.
+Question 4
+What should you do when building relationships between tables?
+
+a. Know the primary and foreign keys.
+b. Know who the users will be.
+c. Specify the name of the Operating Systems
+
+Correct - > a. Know the primary and foreign keys.
+
+
+5.
+Question 5
+Which of the following are examples of a database user? (Select all that apply)
+
+a. admin
+Correct - > Yes, that's an example.
+
+b. auditor
+Correct - > Right! An auditor is an example.
+
+c. end-user
+Correct - > Yep, that's one.
+
+
+6.
+Question 6
+What is a table schema?
+
+a. It is the columns and their data types that make up a table.
+b. It is the disks used to capture audit information.
+c. It refers to where the database is stored.
+
+
+Correct - > a. It is the columns and their data types that make up a table.
+
+
+7.
+Question 7
+Tasks performed by a database include _____ . (Select all that apply)
+
+a. backing up the database
+Correct - > That's correct!
+
+b. monitoring the database
+Correct - > Yes!
+
+c. optimizing the database
+Correct - > Right!
+
+d. editing fields in the database
+
+
+
+8.
+Question 8
+When designing a table, keep in mind that it should __________ .
+
+a. only serve one purpose, such as storing customer info.
+be stored remotely.
+
+b. serve multiple purposes. such as storing customer and product info.
+Correct - > That's correct.
+
+
+9.
+Question 9
+Release updates for databases are _______ . (Select all that apply)
+
+a. provided by Oracle based on license agreement
+Correct
+
+b. downloaded and installed by the database administrator
+Correct
+
+c. configured to install only on the backup databases
+
+
+10.
+Question 10
+True or false: Table names should be short and concise.
+
+a. True
+b. False
+
+Correct - > a. True
+
+
+以下是对每道题目正确答案的总结和拓展：
+
+---
+
+### **Question 1: What should you do when building a database structure?**
+**正确答案：Start by designing a database model.**
+
+- **知识点拓展**：数据库模型设计是构建数据库结构的首要步骤。它定义了数据的逻辑结构，包括实体（表）、属性（字段）和关系（外键）。只有在模型设计完成后，才能确保数据存储和访问的高效性与正确性。
+- **原因**：设计数据库模型是基础，直接决定了后续开发、扩展和性能优化的难易程度。
+
+---
+
+### **Question 2: When designing a database structure, it is important to ________.**
+**正确答案：Know the amount and type of data that will be stored.**
+
+- **知识点拓展**：了解数据量和类型有助于：
+  - 确定表的字段类型（如 `VARCHAR`, `INT`, `DATE`）。
+  - 选择合适的索引和分区策略，提高查询效率。
+  - 预测数据库增长并进行容量规划。
+- **原因**：没有清晰的数据量和类型的理解，可能导致字段设计不合理，存储性能低下。
+
+---
+
+### **Question 3: When building tables, it is important to know ________.**
+**正确答案：All of the above (the purpose of the table, columns needed, related tables).**
+
+- **知识点拓展**：
+  1. **表的用途**：每张表应该有明确的单一职责（如存储客户信息）。
+  2. **字段设计**：字段决定了表的功能和可扩展性。
+  3. **表关系**：设计关联表时需要确保参照完整性（如外键约束）。
+- **原因**：全面考虑这些因素可减少后期因结构缺陷导致的重构。
+
+---
+
+### **Question 4: What should you do when building relationships between tables?**
+**正确答案：Know the primary and foreign keys.**
+
+- **知识点拓展**：
+  - **主键（Primary Key）**：唯一标识每行记录。
+  - **外键（Foreign Key）**：定义表与表之间的关系。
+  - 外键的定义确保数据完整性，避免孤立或错误数据。
+- **原因**：没有主外键设计，数据库的关系可能会丢失，数据一致性难以保障。
+
+---
+
+### **Question 5: Which of the following are examples of a database user?**
+**正确答案：Admin, Auditor, End-user.**
+
+- **知识点拓展**：
+  - **Admin**：负责数据库的配置、维护和监控。
+  - **Auditor**：负责检查数据库的安全性、合规性及审计数据。
+  - **End-user**：使用数据库进行业务操作。
+- **原因**：数据库用户根据角色分工协作，满足功能、安全与合规性需求。
+
+---
+
+### **Question 6: What is a table schema?**
+**正确答案：It is the columns and their data types that make up a table.**
+
+- **知识点拓展**：
+  - 表模式（Schema）定义了表的结构，包括字段名、字段类型、默认值、约束条件等。
+  - 这是数据库物理设计的核心，直接影响存储效率和数据准确性。
+- **原因**：表模式是数据库设计的细节化部分，必须明确字段类型和约束以保证正确性。
+
+---
+
+### **Question 7: Tasks performed by a database include ________.**
+**正确答案：Backing up the database, Monitoring the database, Optimizing the database.**
+
+- **知识点拓展**：
+  - **备份（Backup）**：防止数据丢失。
+  - **监控（Monitoring）**：确保数据库性能和安全。
+  - **优化（Optimization）**：通过索引、分区等技术提高查询效率。
+- **原因**：这些任务保证数据库可靠性和持续高效运行。
+
+---
+
+### **Question 8: When designing a table, keep in mind that it should __________.**
+**正确答案：Only serve one purpose, such as storing customer info.**
+
+- **知识点拓展**：
+  - 单一职责原则（Single Responsibility Principle）适用于数据库设计。
+  - 一个表负责一个主题，避免数据冗余和复杂查询。
+- **原因**：一个表存储多个主题的信息容易导致设计混乱和数据更新异常。
+
+---
+
+### **Question 9: Release updates for databases are ________.**
+**正确答案：Provided by Oracle based on license agreement, Downloaded and installed by the database administrator.**
+
+- **知识点拓展**：
+  - 数据库供应商（如 Oracle）定期发布补丁和新功能。
+  - 数据库管理员负责更新和兼容性测试，确保安全性和稳定性。
+- **原因**：定期更新能修复漏洞、优化性能，同时必须确保生产环境的稳定。
+
+---
+
+### **Question 10: True or false: Table names should be short and concise.**
+**正确答案：True.**
+
+- **知识点拓展**：
+  - 表名应反映其存储内容，且易于识别和记忆。
+  - 使用简短名称避免查询复杂性。
+- **原因**：简洁明了的表名提高了开发和维护的效率，降低理解成本。
+
+
+
+题目二中的选项 **"understand oAuth"** 是关于理解 **OAuth** 的概念。
+
+### **OAuth 是什么？**
+OAuth（Open Authorization）是一种开放标准，用于让用户能够授权第三方应用访问他们存储在另一服务上的资源，而无需共享登录凭据（如用户名和密码）。  
+比如：
+- 当你用 Google 账号登录一个新的网站时，实际上就是使用了 OAuth。
+- 它允许你授权该网站访问你的 Google 数据（比如电子邮件地址），而不暴露你的 Google 密码。
+
+---
+
+### **为什么题目二中“understand oAuth”选项不是正确答案？**
+虽然 OAuth 是一种非常重要的身份验证和授权机制，尤其是在现代网络应用中，它通常与用户认证和 API 交互相关，而不是数据库设计的核心内容。
+
+**题目二的重点** 是数据库结构设计，而设计时需要重点考虑：
+1. 数据量和类型。
+2. 数据表的组织方式。
+3. 数据的关系结构。
+
+OAuth 的理解虽然对开发者有帮助，但它并不是数据库设计中的关键任务。
+
+---
+
+### **总结**
+“understand oAuth” 是一个干扰项，它强调的是身份验证的知识，而非数据库设计的重点任务。
+
+
+
+
+**第九题的C选项：**“configured to install only on the backup databases”（仅配置为安装在备份数据库上）是错误的，原因如下：  
+
+---
+
+### **数据库更新的特点**
+1. **更新的对象是主数据库和备份数据库**  
+   数据库的更新或补丁通常是针对整个数据库系统的，包括生产环境（主数据库）和备份环境。只更新备份数据库而不更新主数据库，会导致主数据库和备份数据库之间的不一致性，可能会在故障恢复或数据同步时引发问题。
+
+2. **更新的目的是提高系统整体性能和安全性**  
+   数据库更新（Release Updates 或 Patches）通常包含功能改进、安全漏洞修复和性能优化。如果只更新备份数据库，主数据库将继续面临已知的安全风险和性能问题。
+
+3. **更新需要由数据库管理员（DBA）手动管理**  
+   数据库更新需要数据库管理员根据业务需求和停机时间窗口，在规划后进行部署。无论是主数据库还是备份数据库，更新的安装和验证都需要谨慎操作。
+
+---
+
+### **为什么 C 选项是错误的？**
+1. **不符合实际操作流程**  
+   数据库更新通常是为所有数据库实例设计的，而不仅限于备份数据库。将更新仅配置在备份数据库上并不符合数据库维护的最佳实践。
+
+2. **备份数据库的作用**  
+   备份数据库的主要功能是为灾难恢复提供支持，而不是作为更新测试或单独运行的数据库环境。主数据库和备份数据库必须保持一致，以确保在主数据库故障时，备份能够无缝接管。
+
+---
+
+### **正确答案的解释**
+A 和 B 是正确的，因为：
+- Oracle 数据库更新是根据许可证协议由 Oracle 提供的（A）。
+- 数据库管理员负责下载和安装这些更新（B）。
+
+---
+
+### **总结**
+C 选项错误的根本原因是它违背了数据库更新的基本原则，即主数据库和备份数据库必须保持一致，不能单独对备份数据库应用更新。
+
+
+
+

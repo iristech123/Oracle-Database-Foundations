@@ -1,0 +1,21 @@
+### 英文总结:  
+When a database is running, several critical files are involved in its operation:  
+
+1. **Parameter File**: Configures the database instance, including memory and other system resources.  
+2. **Password File**: Allows remote admin users with specific roles to connect and perform administrative tasks.  
+3. **Backup File**: Essential for recovering the database in case of a crash.  
+4. **Archived Redo Log Files**: Contain the historical record of changes made to the database, ensuring data recovery and consistency.  
+5. **Trace Files**: Help identify the source of internal errors by providing detailed diagnostic information.  
+6. **Alert Log File**: Chronological log of messages and errors, useful for tracking system performance and identifying issues over time.  
+
+---
+
+### 中文总结：  
+当数据库运行时，会涉及以下几个关键文件：  
+
+1. **参数文件（Parameter File）**：用于配置数据库实例，包括内存和其他系统资源的分配。  
+2. **密码文件（Password File）**：允许具有特定角色的远程管理员用户连接并执行管理任务。  
+3. **备份文件（Backup File）**：在数据库发生崩溃时，用于恢复数据库，非常重要。  
+4. **归档重做日志文件（Archived Redo Log Files）**：记录对数据库所做的历史更改，确保数据的恢复和一致性。  
+5. **跟踪文件（Trace Files）**：提供详细的诊断信息，用于定位内部错误的来源。  
+6. **警报日志文件（Alert Log File）**：按时间顺序记录消息和错误，便于跟踪系统性能并识别问题。  

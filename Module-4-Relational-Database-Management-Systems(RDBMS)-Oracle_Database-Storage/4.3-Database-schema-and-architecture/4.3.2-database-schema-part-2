@@ -1,0 +1,40 @@
+### 英文总结  
+This passage explains the interchangeable terms used in the context of databases and software development, depending on the audience and purpose. Key points include:  
+
+1. **Tables, Entities, and Classes**:  
+   - A table can also be referred to as an entity in database contexts.  
+   - In software development, a table might be called a class.  
+
+2. **Columns, Fields, and Attributes**:  
+   - A column (e.g., ProductID, Name) can also be called a field or an attribute.  
+   - These terms are used interchangeably depending on the context.  
+
+3. **Rows, Records, and Instances**:  
+   - A row in a table is equivalent to a record in database terminology.  
+   - In programming, a row may be referred to as an instance of a class.  
+
+4. **Developer-Specific Terms**:  
+   - Developers might describe a table as a class and its rows as instances of the class.  
+   - Attributes of a class correspond to fields or columns in a table.  
+
+### 中文总结  
+这段内容解释了在不同语境（数据库管理或软件开发）下，同一事物可能会使用不同术语表达的情况。主要重点包括：  
+
+1. **表、实体和类**：  
+   - 数据库中的“表”（table）也可以称为“实体”（entity）。  
+   - 在软件开发中，“表”可能被称为“类”（class）。  
+
+2. **列、字段和属性**：  
+   - 列（column，例如 ProductID、Name）也可以称为字段（field）或属性（attribute）。  
+   - 这些术语可以互换使用，取决于语境。  
+
+3. **行、记录和实例**：  
+   - 表中的“行”（row）在数据库术语中等同于“记录”（record）。  
+   - 在编程中，“行”可能被称为类的“实例”（instance）。  
+
+4. **开发者特定术语**：  
+   - 开发者可能会将表称为“类”，将表中的行称为该类的“实例”。  
+   - 类的属性对应于表的字段或列。  
+
+### 总结  
+理解这些术语之间的对应关系有助于在与不同受众交流时更清楚地表达意图，并准确理解他们的表述。
