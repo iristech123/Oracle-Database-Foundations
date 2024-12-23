@@ -1,0 +1,110 @@
+
+1.
+Question 1
+In tables, what are indexes used for?
+
+a. sorting
+b. backing up resources
+c. exporting data
+d. None of the above
+
+Correct - > a. sorting
+
+2.
+Question 2
+True or false: You can design a table without a primary key.
+
+a. True
+b. False
+
+Correct - > a. True
+
+3.
+Question 3
+Which is the proper order in which databases are built?
+
+a. tables, database, columns, indexes
+b. indexes, tables, columns, databases
+c. columns, tables, indexes, database
+d. database, tables, columns, indexes
+
+Correct - > d. database, tables, columns, indexes
+
+4.
+Question 4
+Which of the following types of data are usually stored in a table? (Select all that apply)
+
+a. hex values
+b. date
+c. system memory maps
+d. numeric
+
+Correct - > b. date & d. numeric
+
+
+5.
+Question 5
+How much data can be stored in a table?
+
+a. the amount of storage space available
+b. no more than 50,000 rows per table and no more than 50M rows per database
+c. it depends on the table
+d. none of the above
+ 
+Correct - > a. the amount of storage space available
+
+
+6.
+Question 6
+In Oracle database operations, which file is responsible for instance configuration during startup?
+
+a. Parameter file
+b. Oracle.dat
+c. Admin,cfg
+
+Correct - > a. Parameter file
+
+
+7.
+Question 7
+Oracle database operations includes all files except _______ .
+
+a. redo log files
+b. trace files
+c. image files
+d. backup files
+
+Correct - > c. image files
+
+
+8.
+Question 8
+True or false: PMON is responsible for regulating all background processes.
+
+a. True
+b. False
+
+Correct - > b. False
+
+
+9.
+Question 9
+Major background processes responsible for data in memory is written to which disk?
+
+a. MMON
+b. SMON
+c. CKPT
+
+Correct - > c. CKPT
+
+
+10.
+Question 10
+Major background processes in Oracle include which of the following? (Select all that apply)
+
+a. SMON
+b. LREG
+c. KMAN
+d. ARCn
+
+Correct - > a. SMON & b. LREG  & d. ARCn
