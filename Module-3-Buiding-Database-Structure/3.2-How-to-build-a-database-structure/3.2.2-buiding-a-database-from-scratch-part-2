@@ -1,8 +1,10 @@
-### 翻译和总结
+### 总结
 
-#### 翻译
-
-在我们设计客户关系管理系统（Customer Relationship Management System）的过程中，这里有一个客户表。这是一个**实体关系图（Entity Relationship Diagram, ERD）**的示例。虽然很简单，但它确实是一个ERD。我们有三个实体：客户实体（Customer Entity）、代理实体（Agents Entity）和订单实体（Orders Entity）。这些实体通过图中的线条表示关系，这些线条表明它们是相互关联的。
+在我们设计客户关系管理系统（Customer Relationship Management System）的过程中，这里有一个客户表。
+这是一个**实体关系图（Entity Relationship Diagram, ERD）**的示例。
+虽然很简单，但它确实是一个ERD。
+我们有三个实体：客户实体（Customer Entity）、代理实体（Agents Entity）和订单实体（Orders Entity）。
+这些实体通过图中的线条表示关系，这些线条表明它们是相互关联的。
 
 在这个ERD中，有几个关键点需要注意，这些将帮助我们更好地理解ERD的构成要素或组件：  
 - **主键（Primary Key）**：例如，客户代码（Customer Code）是客户实体的唯一标识符。这个金色的小钥匙图标表示它是该实体的主键，每个客户都会有唯一的代码。  

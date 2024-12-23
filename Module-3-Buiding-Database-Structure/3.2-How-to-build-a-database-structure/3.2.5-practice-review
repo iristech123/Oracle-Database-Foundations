@@ -1,0 +1,179 @@
+1.
+Question 1
+When designing a table from an existing form, what should you look for?
+
+a. key fields
+b. all of the above
+c. related elements
+d. data types
+
+Correct - > b. all of the above
+
+
+2.
+Question 2
+When repeating data is found on a form, what is the best course of action?
+
+
+a. ignore it
+b. place it in a related table
+c. change it to a numeric field
+d. add more tables and duplicate the data
+
+Correct - > b. place it in a related table
+
+
+3.
+Question 3
+Should data interactions, such as drop-downs and check/radio buttons, be decided at the time the form is evaluated?
+
+a. Yes
+b. No
+
+Correct - > b. No
+
+
+
+4.
+Question 4
+When determining relationships between tables, what purposes does the primary key serve? (Select all that apply)
+
+a. as reference used by foreign keys
+Correct - > You got it!
+
+b. as a way to determine unique row
+Correct - > Yes, this is one purpose.
+
+c. determines the number of fields in the table
+d. ignored: primary keys do not serve a purpose
+
+
+5.
+Question 5
+True or false: When building a database structure, you should start by installing the database.
+
+a. True.
+b. False.
+
+Correct - > b. False.
+Right! You start by designing a database model.
+
+
+### 知识点总结  
+
+---
+
+#### **第1题：从现有表单设计表时，应关注哪些内容？**  
+- 选项：  
+  - **关键字段 (key fields)**  
+  - **所有上述内容 (all of the above)**  
+  - **相关元素 (related elements)**  
+  - **数据类型 (data types)**  
+- **正确答案：所有上述内容 (all of the above)**  
+
+**知识点**：  
+设计表格时，需要综合考虑以下因素：  
+1. **关键字段 (key fields)**：确保能够唯一标识每行数据。  
+2. **相关元素 (related elements)**：识别数据之间的逻辑关系。  
+3. **数据类型 (data types)**：为字段选择适当的数据类型以确保数据完整性和效率。  
+
+---
+
+#### **第2题：如果表单中发现重复数据，最佳的处理方法是什么？**  
+- 选项：  
+  - 忽略它 (ignore it)  
+  - 将其放入相关表中 (place it in a related table)  
+  - 改为数值字段 (change it to a numeric field)  
+  - 添加更多表并复制数据 (add more tables and duplicate the data)  
+- **正确答案：将其放入相关表中 (place it in a related table)**  
+
+**知识点**：  
+当发现重复数据时：  
+- 应将其提取到独立的相关表中，避免数据冗余，确保数据库的**规范化**和可维护性。  
+
+---
+
+#### **第3题：在评估表单时，是否需要决定数据交互方式（如下拉菜单、复选框等）？**  
+- 选项：  
+  - 是 (Yes)  
+  - 否 (No)  
+- **正确答案：是 (Yes)**  
+
+**知识点**：  
+在设计表单时：  
+- 应考虑**用户交互方式**，如下拉菜单、复选框或单选按钮，以便在数据库中为相关字段建立适当的结构或关系。  
+
+---
+
+#### **第4题：确定表之间的关系时，主键的作用有哪些？（多选）**  
+- 选项：  
+  - 被外键引用 (as reference used by foreign keys)  
+  - 用于确定唯一行 (as a way to determine unique row)  
+  - 确定表中的字段数量 (determines the number of fields in the table)  
+  - 忽略：主键无作用 (ignored: primary keys do not serve a purpose)  
+- **正确答案**：  
+  - 被外键引用 (as reference used by foreign keys)  
+  - 用于确定唯一行 (as a way to determine unique row)  
+
+**知识点**：  
+主键的主要作用：  
+1. **唯一标识每行数据**，确保数据完整性。  
+2. **为外键提供引用**，建立表之间的关系。  
+
+---
+
+#### **第5题：判断对错：构建数据库结构时，应从安装数据库开始。**  
+- 选项：  
+  - 是 (True)  
+  - 否 (False)  
+- **正确答案：否 (False)**  
+
+**知识点**：  
+设计数据库时：  
+- **第一步**应为**设计数据库模型**（如 ER 图），而不是直接安装数据库。  
+- 良好的模型是高效数据库实现的基础。  
+
+
+
+将重复的元素拆分到独立的表中是数据库设计中的**重要原则之一**，这与**数据库规范化（Normalization）**密切相关，其目的如下：
+
+---
+
+### 1. **避免数据冗余，节省存储空间**
+- **问题**：重复的元素如果存储在同一个表中，会导致同样的数据（如城市名称、邮政编码）被多次存储，占用大量存储空间。
+- **解决**：通过将重复元素移入独立的表中，这些重复值只需要存储一次，并通过主键和外键进行关联。
+
+**示例**：  
+在客户表中，如果将每个客户的地址信息存储完整，会造成同一城市名称多次重复存储。将城市信息移到独立的表中后，只需存储一次城市名称，其余用外键关联即可。
+
+---
+
+### 2. **提高数据一致性，减少错误**
+- **问题**：如果同样的信息（如地址或订单明细）在不同记录中存储，修改或更新时可能会漏掉部分记录，导致数据不一致。
+- **解决**：通过单独的表统一管理信息，所有引用数据的地方都会自动同步更新。
+
+**示例**：  
+一个城市的名称如果需要更新，分散存储在多个表中需要逐一修改；独立存储在一个表中时，只需修改一次即可。
+
+---
+
+### 3. **增强数据灵活性，支持动态变化**
+- **问题**：如果不分表，后续对重复元素的扩展（如添加更多属性）会变得复杂。
+- **解决**：将重复数据拆分到独立表后，可以灵活地为这些元素添加属性，而不影响主表设计。
+
+**示例**：  
+在地址表中，可以轻松添加字段（如国家代码、区域编号），不需要修改客户表或重新设计数据库。
+
+---
+
+### 4. **简化查询与维护**
+- **问题**：在单个表中存储大量重复数据，会增加查询复杂性和维护成本。
+- **解决**：通过拆分表结构，可以清晰定义表间关系，使查询逻辑更清晰，维护更容易。
+
+**示例**：  
+要查询属于同一个城市的所有客户，若城市信息单独存储，查询只需通过外键关联即可快速完成。
+
+---
+
+### 总结：
+将重复元素移入独立表的核心目的是**优化数据库设计**，通过减少冗余、提高一致性、增强灵活性和简化查询，使数据库更高效、更易于维护、更适应业务需求的变化。
