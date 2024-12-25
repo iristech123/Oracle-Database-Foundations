@@ -1,0 +1,37 @@
+雪花模式（Snowflake Schema）：
+
+1. 支持规范化的表结构，避免数据重复。
+2. 通过主键和外键将表关联起来。
+3. 示例：客户表 → 地址表 → 邮政编码表。
+4. 适合联机事务处理（OLTP），确保数据写入准确且无重复。
+
+
+
+星型模式（Star Schema）：
+1. 支持非规范化的表结构，允许数据重复以加快读取速度。
+2. 包含一个中心事实表，通过外键连接相关的维度表（如客户、产品、销售）。
+3. 适合联机分析处理（OLAP），主要用于报表和快速读取数据。
+
+OLAP vs. OLTP：
+
+OLTP：优化频繁写入，确保数据无重复（雪花模式）。
+OLAP：优化快速读取，主要用于报表（星型模式）。
+
+
+
+Snowflake Schema:
+1. Supports normalized table structures where data is not repeated.
+2. Tables are related via primary and foreign keys.
+3. Example: Customer table → Address table → Zip Code table.
+4. Best suited for Online Transaction Processing (OLTP) to ensure accurate data writes without duplication.
+
+
+Star Schema:
+1. Supports denormalized table structures, allowing data repetition for faster reads.
+2. Contains a central fact table with foreign keys connected to related dimension tables (e.g., Customers, Products, Sales).
+3. Best suited for Online Analytical Processing (OLAP) and reporting, enabling quick access to data.
+
+
+OLAP vs. OLTP:
+OLTP: Optimized for frequent writing, ensuring no data duplication (Snowflake Schema).
+OLAP: Optimized for fast reads, primarily for reporting purposes (Star Schema).

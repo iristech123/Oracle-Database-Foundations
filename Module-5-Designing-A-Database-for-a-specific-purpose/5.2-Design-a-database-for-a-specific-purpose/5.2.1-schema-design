@@ -1,0 +1,120 @@
+### 总结  
+1. **Schema Definition**:  
+   - A schema defines the table's structure, including column names and data types.  
+   - Schema Design refers to how tables are related to each other within a database.  
+
+2. **Snowflake Schema**:  
+   - Supports **normalized table structures** where data is not repeated.  
+   - Tables are related via **primary and foreign keys**.  
+   - Example: Customer table → Address table → Zip Code table.  
+   - Best suited for **Online Transaction Processing (OLTP)** to ensure accurate data writes without duplication.  
+
+3. **Star Schema**:  
+   - Supports **denormalized table structures**, allowing data repetition for faster reads.  
+   - Contains a **central fact table** with foreign keys connected to related dimension tables (e.g., Customers, Products, Sales).  
+   - Best suited for **Online Analytical Processing (OLAP)** and reporting, enabling quick access to data.  
+
+4. **OLAP vs. OLTP**:  
+   - **OLTP**: Optimized for frequent writing, ensuring no data duplication (Snowflake Schema).  
+   - **OLAP**: Optimized for fast reads, primarily for reporting purposes (Star Schema).  
+
+---
+
+### 总结  
+1. **模式定义**：  
+   - 模式（Schema）定义了表的结构，包括列名和数据类型。  
+   - 模式设计（Schema Design）指的是数据库中表之间的关系和组织方式。  
+
+2. **雪花模式（Snowflake Schema）**：  
+   - 支持**规范化的表结构**，避免数据重复。  
+   - 通过**主键和外键**将表关联起来。  
+   - 示例：客户表 → 地址表 → 邮政编码表。  
+   - 适合**联机事务处理（OLTP）**，确保数据写入准确且无重复。  
+
+3. **星型模式（Star Schema）**：  
+   - 支持**非规范化的表结构**，允许数据重复以加快读取速度。  
+   - 包含一个**中心事实表**，通过外键连接相关的维度表（如客户、产品、销售）。  
+   - 适合**联机分析处理（OLAP）**，主要用于报表和快速读取数据。  
+
+4. **OLAP vs. OLTP**：  
+   - **OLTP**：优化频繁写入，确保数据无重复（雪花模式）。  
+   - **OLAP**：优化快速读取，主要用于报表（星型模式）。  
+
+---
+
+
+**排程**，英文是 **scheduling**，是指**安排和管理任务或操作的顺序和时间，以优化资源利用率并确保任务按时完成**的过程。排程广泛应用于多个领域，包括计算机系统、项目管理、生产制造等。
+
+### **排程的主要含义**：
+1. **计算机系统中的排程**：
+   - **CPU排程**：在多任务系统中，操作系统需要决定哪个任务优先使用CPU资源。例如，时间片轮转、优先级排程等。
+   - **任务排程**：在分布式系统或云计算中，任务可能需要分配到不同的计算节点执行。
+   - **输入/输出排程**：决定磁盘或其他设备处理数据的顺序。
+
+2. **项目管理中的排程**：
+   - 制定时间表，明确任务的开始时间、结束时间以及资源分配。
+   - 使用工具如甘特图、关键路径法（CPM）或项目评估与审查技术（PERT）图来管理任务进度。
+
+3. **生产制造中的排程**：
+   - 决定生产任务在不同工序或机器上的执行顺序和时间。
+   - 目标是最小化生产成本、缩短生产周期或满足订单交付时间。
+
+4. **其他领域的排程**：
+   - **物流与运输**：安排货物配送的时间和路线。
+   - **人员排班**：为员工设计工作时间表，确保覆盖所有工作岗位。
+
+---
+
+### **排程的常见目标**：
+- 提高资源利用率（CPU、设备、人力等）。  
+- 缩短完成时间（比如任务完成的总时长，称为**Makespan**）。  
+- 减少等待时间和延迟。  
+- 保证系统的公平性（在计算机中，确保所有任务有机会运行）。  
+
+---
+
+### **排程的实际应用举例**：
+1. **云计算**：将用户的计算任务分配到不同的服务器上运行。  
+2. **制造业**：制定生产计划，确保材料和设备的高效使用。  
+3. **航班调度**：安排飞机起降时间，优化机场跑道的使用。  
+4. **员工排班**：制定工作时间表，确保人员覆盖率和员工满意度。  
+
+如果您对某个领域的排程有具体疑问，可以详细展开探讨。 😊
+
+
+**视频：**
+
+我想简要地和你谈谈**模式设计（Schema Design）**及其重要性。
+首先，我们要了解“雪花模式（Snowflake Schema）”。
+记住，模式（schemas）本质上是表中的列。
+一个表中有许多列，每个列都有自己的数据类型。
+例如，这列是整数（integer），那列是可变长度字符（variable-length character），另一列可能是日期（date）。
+这些列和它们的数据类型共同构成了表的模式。
+所以，当我提到表模式（table schema）时，我指的是列的名称和它们的数据类型。
+
+当我们讨论**模式设计（Schema Design）**时，实际上是在讨论这些表如何通过关系组织在一起。
+例如，“雪花模式”中可能有一个**客户表（Customer Table）**。这个客户表可能关联了一个**地址表（Address Table）**，地址表又可能关联了一个**邮编表（Zip Code Table）**，用来将邮编与城市和州联系起来。
+同时，客户表也可能关联一个**销售表（Sales Table）**，销售表可能关联一个**产品表（Product Table）**，产品表可能又关联一个**库存表（Inventory Table）**。
+从这个结构中，你可以看到它的形状类似于一个雪花，逐步扩展，这就是雪花模式的来源。
+
+**雪花模式（Snowflake Schema）**本质上支持**规范化（Normalized）**表结构，表中的数据不重复。
+例如，客户表只包含客户数据，地址表只包含地址数据，邮编表只包含邮编数据，等等。
+这些表通过**主键（Primary Key）**和**外键（Foreign Key）**相互关联。
+例如，客户表有一个**客户ID（Customer ID）**，地址表有一个**地址ID（Address ID）**和一个**客户ID（Customer ID）**，邮编表有一个**邮编ID（Zip Code ID）**和**地址ID（Address ID）**，等等。
+通过主键和外键的使用，这些表之间建立了关系，同时确保数据不重复。
+
+接下来是**星型模式（Star Schema）**。
+与雪花模式不同，星型模式支持**快速读取（Fast Reads）**。
+星型模式包含**非规范化（Denormalized）**数据，也就是数据可能会重复。
+星型模式的核心是一个**事实表（Fact Table）**。事实表的周围有多个关联表，例如客户表、产品表、发票表和销售表等。
+这些关联表有各自的主键，而事实表中包含许多外键，这些外键与关联表中的主键相关联。
+
+星型模式的特点是，在查询时，你可以通过事实表快速访问其他关联表。
+这种“快速读取”被称为“一跳（One Hop）”。
+从事实表到目标表只需要一层关系。这种设计适合需要快速读取的场景。
+
+雪花模式和星型模式主要用于**在线事务处理（OLTP）**和**在线分析处理（OLAP）**。  
+- **雪花模式**适合在线事务处理（OLTP），用于写入数据时确保数据不重复。  
+- **星型模式**适合在线分析处理（OLAP），通常用于报表生成，因为报表需要快速读取数据。
+
+总结来说，**雪花模式**适合数据写入（OLTP），而**星型模式**适合数据读取和报表生成（OLAP）。这就是模式设计的核心内容。

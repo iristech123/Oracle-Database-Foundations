@@ -1,0 +1,49 @@
+### 英文总结  
+1. **Definition of Transactions**:  
+   - Transactions are a **unit of work** involving multiple logical steps to complete.  
+   - Example: Withdrawing cash from an ATM involves several steps like inserting a card, entering a PIN, selecting an account, and requesting an amount.  
+
+2. **Verification Process**:  
+   - The ATM verifies your request by checking your card, PIN, and account balance.  
+   - The bank processes the request and decides whether to allow the transaction based on factors like sufficient balance, daily limits, or incorrect PINs.  
+
+3. **Failure Points**:  
+   - Transactions can fail at various points, such as:  
+     - Card recognition issues.  
+     - Incorrect PIN.  
+     - Insufficient balance.  
+     - Exceeding withdrawal limits.  
+     - Network or ATM hardware failures.  
+
+4. **All-Or-Nothing Principle**:  
+   - Transactions **either succeed as a whole or fail completely**.  
+   - Example: If you request $100, the bank will not give you $50 and owe you $50 later.  
+
+5. **Summary**:  
+   - Transactions are a **group of logical tasks** that must be completed together, ensuring data consistency and reliability.  
+
+---
+
+### 中文总结  
+1. **事务的定义**：  
+   - 事务是一个**工作单元**，由多个逻辑步骤组成以完成特定任务。  
+   - 示例：从ATM取款包括插卡、输入密码、选择账户和请求取款金额等步骤。  
+
+2. **验证过程**：  
+   - ATM会验证您的请求，包括检查银行卡、密码和账户余额。  
+   - 银行会根据余额、每日限额或密码是否正确等因素决定是否允许该事务。  
+
+3. **失败点**：  
+   - 事务可能在以下阶段失败：  
+     - 卡片识别问题。  
+     - 密码输入错误。  
+     - 余额不足。  
+     - 超过每日取款限额。  
+     - 网络或ATM硬件故障。  
+
+4. **全有或全无原则**：  
+   - 事务要么**完全成功**，要么**完全失败**。  
+   - 示例：如果请求取$100，银行不会给您$50并欠您$50。  
+
+5. **总结**：  
+   - 事务是一个**逻辑任务的集合**，必须整体完成，以确保数据一致性和可靠性。  

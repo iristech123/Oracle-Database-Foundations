@@ -1,0 +1,62 @@
+### **题目讲解与答案解析**
+
+---
+
+#### **Question 1: Which is a benefit of designing databases for a specific purpose?**
+
+**选项分析**  
+- **it depends on the application**：模棱两可的回答，并未明确指出数据库设计的具体好处。  
+- **it helps with backups**：备份是数据库管理的一部分，但并非设计数据库的核心目的。  
+- **it determines how data will be best stored and used**：正确答案，数据库设计的主要目的是确保数据的存储和使用方式最适合具体应用需求。
+
+**正确答案解释**  
+设计数据库时，根据特定用途优化数据存储和处理方式，可以提升系统性能、支持特定业务需求并确保数据操作的效率。这是数据库设计的重要目标。
+
+---
+
+#### **Question 2: What is a database transaction?**
+
+**选项分析**  
+- **indexes associated with a table**：索引是用于提高查询效率的数据库结构，与事务无关。  
+- **a query performed on the database**：查询是数据库操作的一种，但它不构成事务的定义。  
+- **how data is saved onto a database**：正确答案，虽然事务中可能涉及数据保存，但事务的范围更广泛，包括多个逻辑操作。  
+- **the exporting rules of a table**：表的导出规则与事务定义无关。
+
+**正确答案解释**  
+事务（Transaction）是数据库中一组不可分割的操作，这些操作要么全部成功，要么全部失败，确保数据一致性。事务通常包括读、写和更新等操作。
+
+---
+
+#### **Question 3: Which of the following is the definition of a database schema?**
+
+**选项分析**  
+- **designed specifically to contain lookup values**：仅描述了一种模式可能的用途，并非模式的定义。  
+- **the structure of a database**：正确答案，数据库模式是数据库的结构定义，包括表、列、数据类型和关系等。  
+- **asking the database a question**：这是查询的定义，与模式无关。
+
+**正确答案解释**  
+数据库模式（Schema）定义了数据库的结构框架，包括表的名称、列的定义、数据类型、关系和其他数据库对象的描述。
+
+---
+
+#### **Question 4: Raw data is stored __________.**
+
+**选项分析**  
+- **in program units within a database**：程序单元（如存储过程）用于操作数据，而非直接存储原始数据。  
+- **in a table**：正确答案，数据库的核心是表，表用于存储数据。  
+- **within primary keys**：主键是表的一部分，用于唯一标识记录，并不存储原始数据。
+
+**正确答案解释**  
+数据库中的原始数据存储在表中。表是数据库的基本存储单位，数据通过行和列组织。
+
+---
+
+#### **Question 5: Which of the following is associated with columns within tables?**
+
+**选项分析**  
+- **indexes**：正确答案，索引通常与列相关联，用于加速基于列的查询。  
+- **a lookup table**：查找表是一个独立的表，与单个列无直接关联。  
+- **stored procedures**：存储过程是程序逻辑，与列无关。
+
+**正确答案解释**  
+索引是一种数据库结构，用于提高查询性能。通常索引基于表的一个或多个列创建，以加快检索速度。

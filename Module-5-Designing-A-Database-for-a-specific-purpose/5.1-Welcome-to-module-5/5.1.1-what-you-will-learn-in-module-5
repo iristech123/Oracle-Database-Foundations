@@ -1,0 +1,19 @@
+### 英文总结  
+1. **Purpose-Driven Design**: Databases are designed for specific purposes, such as e-commerce, accounting, scheduling, development, or automation. The design components vary based on the intended purpose.  
+2. **Data Storage and Transactions**:  
+   - Data in databases is saved, retrieved, and processed through transactions.  
+   - Transactions affect how data is stored, manipulated, and retrieved.  
+3. **Consistency and Redundancy**:  
+   - Transactions impact the database's ability to maintain consistency and handle redundancy.  
+4. **Transaction Types**: The module will explore different types of transactions, including **BASE** and **ACID** transactions.  
+
+---
+
+### 中文总结  
+1. **基于目的的设计**：数据库是为特定目的设计的，例如电商、会计、排程、开发或自动化。设计的组成部分会因用途而有所不同。  
+2. **数据存储与事务**：  
+   - 数据通过事务进行保存、检索和处理。  
+   - 事务会影响数据的存储方式、操作和检索方式。  
+3. **一致性与冗余**：  
+   - 事务会影响数据库维持一致性和处理冗余的能力。  
+4. **事务类型**：本模块将探讨不同类型的事务，包括 **BASE** 和 **ACID** 事务。  
