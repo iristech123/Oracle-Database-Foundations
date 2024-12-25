@@ -1,0 +1,124 @@
+以下是每道题目的解释和选项分析：
+
+---
+
+### **Question 1: What does the C in ACID transaction model stand for?**
+
+**Correct Answer: Consistency**
+
+- **Consistency**: 在ACID事务模型中，Consistency（一致性）意味着事务会将数据库从一个一致的状态转移到另一个一致的状态，确保数据的一致性。举个例子，如果一个银行转账事务在从一个账户扣款并将金额存入另一个账户时遇到问题，数据库会回滚事务，以确保数据不会变得不一致。
+- **Continuity**：不是ACID的组成部分，虽然数据库事务需要保持一致性，但“连续性”不是ACID模型的一部分。
+- **Commit**：提交操作是数据库事务的一部分，但它并不表示ACID模型中的C。
+  
+**Translation**: C 代表一致性。
+
+---
+
+### **Question 2: Which transaction model is associated with most Big Data databases?**
+
+**Correct Answer: BASE**
+
+- **BASE**: BASE代表基本可用、软状态和最终一致性，这种模型适用于大数据（Big Data）数据库，它强调的是可用性和扩展性，而不严格要求事务的即时一致性。这是因为许多大数据系统处理大量数据并需要高可扩展性，通常选择BASE模型而不是ACID。
+- **KPTG**：这个选项没有代表任何已知的事务模型。
+- **ACID**：虽然ACID适用于传统的关系型数据库，但大多数大数据系统使用BASE模型来支持高可用性和扩展性。
+- **GRM**：也不是一个标准的事务模型。
+
+**Translation**: BASE 模型与大多数大数据数据库相关。
+
+---
+
+### **Question 3: The BASE transaction model is best when _______ .**
+
+**Correct Answer: near real-time availability is most important**
+
+- **Near real-time availability**: BASE模型注重数据的最终一致性，允许在某些数据不完全一致时提供高可用性。这种模型非常适合需要快速处理数据并且不强求实时一致性的场景，常见于大数据和分布式系统。
+- **Integrity is of great concern**：ACID模型更适合对数据完整性有严格要求的情况，BASE模型的重点是可用性，而非一致性。
+- **Data needs to be encrypted**：数据加密不是BASE模型的核心目标，它更侧重于可用性和扩展性。
+- **Mobile devices need to access data**：虽然BASE模型适合分布式数据访问，但其主要目的是支持大规模数据处理，并不专门针对移动设备。
+
+**Translation**: 当实时可用性最重要时，BASE 事务模型是最好的选择。
+
+---
+
+### **Question 4: What are stored procedures?**
+
+**Correct Answer: program units within a database**
+
+- **Program units within a database**: 存储过程是数据库中的预编译程序单元，用于封装数据库操作（如插入、更新等）。它们可以被反复调用来执行特定任务，提高代码重用性和性能。
+- **The structure of a database**：这是数据库架构或模式的定义，不是存储过程。
+- **Where raw data is stored**：数据存储通常在表中，而不是存储过程中。存储过程并不用于存储原始数据。
+
+**Translation**: 存储过程是数据库中的程序单元。
+
+---
+
+### **Question 5: What are partitions?**
+
+**Correct Answer: how data is divided logically and physically**
+
+- **How data is divided logically and physically**: 数据分区是将表数据按照某些规则分割成多个小部分的过程。它有助于提升大规模数据库的性能和可管理性，常见的分区方式包括按范围、按哈希等。
+- **Program units within a database**：这是存储过程的定义，不是数据分区。
+- **Where raw data is stored**：数据存储通常在表中，而不是分区。分区是一种数据管理方式。
+  
+**Translation**: 分区是指数据在逻辑和物理上如何划分。
+
+---
+
+### **Question 6: When you ask a database a question, you are submitting a(n) __________ .**
+
+**Correct Answer: query**
+
+- **Query**: 向数据库提出问题通常指的是执行查询，查询是用来获取数据的SQL语句。
+- **Foreign key**：外键用于表之间建立关系，不用于询问数据。
+- **Procedure**：存储过程是封装SQL语句的程序单元，用于执行任务，不是直接用于提问。
+  
+**Translation**: 向数据库提问时，你提交的是一个查询。
+
+---
+
+### **Question 7: What is the language used to perform tasks on a database?**
+
+**Correct Answer: SQL**
+
+- **SQL**: SQL（结构化查询语言）是用于数据库管理和操作的标准语言，支持查询、插入、更新、删除等操作。
+- **HTML**：HTML用于网页结构的定义，与数据库操作无关。
+- **jQuery**：jQuery是一个JavaScript库，主要用于网页上的交互操作，不是数据库操作语言。
+- **JavaScript**：JavaScript用于网页开发，尽管有些库可以与数据库交互，但它本身不是用来执行数据库任务的语言。
+
+**Translation**: 用于执行数据库任务的语言是SQL。
+
+---
+
+### **Question 8: True or false: a primary key uniquely identifies a row in a table.**
+
+**Correct Answer: True**
+
+- **True**: 主键是表中的一个列或多个列的组合，它唯一地标识每一行数据。主键值不能重复或为空，确保每行数据都是唯一的。
+- **False**：这是错误的，主键确实是用于唯一标识表中的每一行数据。
+
+**Translation**: 主键确实是唯一标识表中每一行数据的。
+
+---
+
+### **Question 9: Which is designed specifically to contain lookup values such as zip codes?**
+
+**Correct Answer: a lookup table**
+
+- **A lookup table**: 查找表用于存储静态数据，如邮政编码、国家代码等，它们通常用于简化查询和避免数据重复。
+- **A foreign key**：外键是指向另一张表的主键，它用于建立表之间的关联，但并不存储查找值。
+- **Indexes**：索引用于加速数据查询，但不是用于存储查找值。
+- **A primary key**：主键用于唯一标识表中的记录，而不是专门用于存储查找值。
+
+**Translation**: 查找表专门用于存储类似邮政编码的查找值。
+
+---
+
+### **Question 10: A(n) __________ references a primary key, usually in a different table.**
+
+**Correct Answer: foreign key**
+
+- **Foreign key**: 外键是指在一张表中引用另一张表的主键，用于建立两表之间的关系。
+- **Lookup key**：这个术语不常用，也不指代数据库中的标准概念。
+- **Index**：索引用于加速数据查询，但并不用于引用其他表的主键。
+  
+**Translation**: 外键引用主键，通常位于不同的表中。
